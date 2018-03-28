@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+        <!--scripts-->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>        
+         <!-- Added link to the jQuery library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        
+
+        <!--links-->
+        <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet"> 
+    
+        <!-- Bring in our bootstrap stylesheet -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                        <div class="jumbotron">
+                                <h1 class="display-4">Employee Management</h1>
+                                <p class="lead">Use this to track employee time.</p>
+                         </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                        <table class="table">
+                                <thead class="thead-dark">
+                                  <tr>
+                                    <th scope="col">Employee Name</th>
+                                    <th scope="col">Role</th>
+                                    <th scope="col">Start Date</th>
+                                    <th scope="col">Months Worked</th>
+                                    <th scope="col">Monthly Rate ($)</th>
+                                    <th scope="col">Total Billed ($)</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                                                     
+                                </tbody>
+                        </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                        <form>
+                                <div class="form-group">
+                                  <label for="employeeName">Employee Name</label>
+                                  <input type="name" class="form-control" id="employeeName" aria-describedby="employee" placeholder="Enter employee name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="role">Role</label>
+                                    <input type="role" class="form-control" id="role" aria-describedby="roleSpot" placeholder="Enter employee role">
+                                </div>
+                                <div class="form-group">
+                                    <label for="employeeName">Start Date (DD/MM/YY ex:01/01/01)</label>
+                                    <input type="start" class="form-control" id="startDate" aria-describedby="dateSpot" placeholder="Enter employee start date">
+                                </div>
+                                <div class="form-group">
+                                    <label for="employeeName">Rate</label>
+                                    <input type="howMuch" class="form-control" id="rate" aria-describedby="rateSpot" placeholder="Enter employee rate">
+                                </div>
+                                <button type="submit" class="btn btn-primary button">Submit</button>
+                        </form>
+                </div>
+            </div>
+    </div>
+     
+
+    <script src="./assets/javascript/js.js"></script>   
+</body>
+</html>
